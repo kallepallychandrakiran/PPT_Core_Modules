@@ -1,0 +1,43 @@
+Core Module assignment
+======================
+Assignment-1
+------------
+Q1. The main difference between a compiler and an interpreter is that a compiler translates the entire source
+code into machine code before execution, while an interpreter translates and executes the source code line by line.
+
+Q2. JDK stands for Java Development Kit, which includes tools for developing and compiling Java programs.
+JRE stands for Java Runtime Environment, which provides the necessary runtime environment to run Java applications.
+JVM stands for Java Virtual Machine, which is responsible for executing Java bytecode.
+
+Q3. The JVM allocates different types of memory areas, including the heap, method area, stack, PC registers, and native method stack.
+
+Q4. JIT (Just-In-Time) compiler is a component of the JVM that dynamically compiles parts of the bytecode into native machine code at runtime.
+It aims to improve performance by identifying frequently executed code and optimizing it for faster execution.
+
+Q5. In Java, the access specifiers determine the accessibility of classes, methods, and variables. 
+The access specifiers are public, protected, default (no explicit specifier), and private.
+
+Q6. In Java, a compiler is a software tool that translates Java source code into bytecode, 
+which is a platform-independent representation of the program. It performs syntax and semantic checks,
+generates intermediate code, and prepares the program for execution on the JVM.
+
+Q7. In Java, there are three types of variables: instance variables (belonging to an instance of a class), 
+static variables (associated with a class itself), and local variables (defined within a method or block).
+
+Q8. Java provides various data types, including primitive data types (such as int, boolean, float) 
+and reference types (such as classes, interfaces, and arrays).
+
+Q9. Identifiers in Java are used to name classes, methods, variables, and other program elements.
+They must follow certain rules, such as starting with a letter or underscore, consisting of letters, digits, or underscores, and not being a reserved keyword.
+
+Q10. The architecture of the JVM consists of three main components: class loader, runtime data area, and execution engine.
+The class loader loads class files, the runtime data area stores data during program execution, 
+and the execution engine interprets or compiles bytecode into machine code for execution.
+
+
+
+
+
+
+
+

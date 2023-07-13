@@ -1,0 +1,145 @@
+Assignment-3
+------------
+Q1.class BankAccount {
+    private String accountHolderName;
+    private double balance;
+
+    public BankAccount(String accountHolderName, double balance) {
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+public class BankingSystem {
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount("John Doe", 1000.0);
+        System.out.println("Account Holder Name: " + account.getAccountHolderName());
+        System.out.println("Balance: " + account.getBalance());
+    }
+}
+Q2)class Parent {
+    public void display() {
+        System.out.println("Parent class method");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    public void display() {
+        System.out.println("Child class method");
+    }
+}
+
+public class MethodOverridingExample {
+    public static void main(String[] args) {
+        Parent parentObj = new Parent();
+        parentObj.display();  // Output: Parent class method
+
+        Child childObj = new Child();
+        childObj.display();  // Output: Child class method
+    }
+}
+
+Q3.class Animal {
+    public void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    public void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class RuntimePolymorphismExample {
+    public static void main(String[] args) {
+        Animal animal;
+
+        animal = new Dog();
+        animal.sound();  // Output: Dog barks
+
+        animal = new Cat();
+        animal.sound();  // Output: Cat meows
+    }
+}
+Q4)public class CompileTimePolymorphismExample {
+    public static void add(int a, int b) {
+        int sum = a + b;
+        System.out.println("Sum of two integers: " + sum);
+    }
+
+    public static void add(double a, double b) {
+        double sum = a + b;
+        System.out.println("Sum of two doubles: " + sum);
+    }
+
+    public static void main(String[] args) {
+        add(5, 10);        // Output: Sum of two integers: 15
+        add(2.5, 3.5);     // Output: Sum of two doubles: 6.0
+    }
+}
+Q5. Achieving loose coupling in Java can be done by using object-oriented programming concepts such as encapsulation, inheritance, and interfaces.
+By creating classes with clear responsibilities and defining interfaces to communicate between them, you can reduce dependencies and achieve loose coupling.
+
+Q6. The benefit of encapsulation in Java is that it provides data hiding and protects the internal state of an object from being accessed directly by other parts of the program.
+It allows for better control over data access and modification, enhances code maintainability, and facilitates code reusability.
+
+Q7. No, Java is not considered a 100% object-oriented programming language because it supports primitive data types, which are not objects. Additionally, Java has features like static methods, static variables, and the concept of null, which are not strictly object-oriented. However, Java is predominantly object-oriented and follows many object-oriented principles.
+
+Q8. The advantages of abstraction in Java are:
+
+It allows you to focus on the essential features of an object and hide unnecessary details.
+It helps in creating reusable code components through class inheritance and interfaces.
+It provides a clear separation between interface and implementation, allowing for easier maintenance and modification of code.
+It enhances code readability and understandability by providing a higher-level view of the system.
+Q9. Abstraction in Java refers to the process of creating abstract classes and interfaces to define common characteristics 
+and behaviors that can be shared by multiple classes. It allows you to define methods without providing their implementation,
+leaving it to the subclasses to implement those methods. Here's an example:
+abstract class Shape {
+    public abstract void draw();
+}
+
+class Circle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle");
+    }
+}
+
+class Rectangle extends Shape {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a rectangle");
+    }
+}
+
+public class AbstractionExample {
+    public static void main(String[] args) {
+        Shape circle = new Circle();
+        circle.draw();      // Output: Drawing a circle
+
+        Shape rectangle = new Rectangle();
+        rectangle.draw();   // Output: Drawing a rectangle
+    }
+}
+Q10.. In Java, a final class is a class that cannot be subclassed. It is the opposite of an extendable or inheritable class.
+When a class is marked as final, it means it cannot be extended by other classes to inherit its properties or behaviors.
+Additionally, all methods in a final class are implicitly final as well, meaning they cannot be overridden by subclasses.
+Final classes are often used for utility classes or classes that provide constants or helper methods.

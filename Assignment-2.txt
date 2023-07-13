@@ -1,0 +1,60 @@
+Assignment-2
+-------------
+Q1. The conditional operators in Java are:
+
+== (equal to)
+!= (not equal to)
+> (greater than)
+< (less than)
+>= (greater than or equal to)
+<= (less than or equal to)
+Q2. Operators in Java can be classified into three types based on the number of operands:
+
+Unary operators (e.g., !, -)
+Binary operators (e.g., +, -, *, /, %)
+Ternary operator (only one: ?:, the conditional operator)
+Q3. The switch statement in Java is used for multi-way branching. It allows the program to execute different code blocks 
+based on the value of an expression or variable.
+
+Q4. Conditional statements in Java are used to control the flow of execution based on certain conditions. 
+The commonly used conditional statements are if, else if, and else. They help in executing specific blocks of code based on the evaluation of conditions.
+
+Q5.if (condition) {
+    // code to be executed if the condition is true
+} else {
+    // code to be executed if the condition is false
+}
+
+Q6.String str1 = "Hello";
+String str2 = "World";
+
+if (str1.equals(str2)) {
+    // Strings are equal
+} else {
+    // Strings are not equal
+}
+Q7.In Java, strings are immutable, meaning their values cannot be changed. However, using the StringBuilder class, you can create mutable strings.
+Q8.import java.util.Arrays;
+
+public class StringSortExample {
+    public static void main(String[] args) {
+        String input = "openai";
+        char[] chars = input.toCharArray();
+        Arrays.sort(chars);
+        String sortedString = new String(chars);
+        System.out.println(sortedString);
+    }
+}
+Q9.public class LetterCheckExample {
+    public static void main(String[] args) {
+        String word = "Umbrella";
+        boolean containsE = word.contains("e");
+        if (containsE) {
+            System.out.println("The word contains the letter 'e'.");
+        } else {
+            System.out.println("The word does not contain the letter 'e'.");
+        }
+    }
+}
+Q10. The string constant pool is located in the Java heap memory. It is a special area where string literals and interned strings are stored. 
+The string pool allows efficient memory management by reusing string objects with the same value.
